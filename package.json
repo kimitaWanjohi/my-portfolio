@@ -5,6 +5,10 @@
   "repository": "https://github.com/kimitaWanjohi/my-portfolio.git",
   "author": "kimitawanjohi <kimitawanjohi7923@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "hint": "hint .",
+    "stylelint": "stylelint \"**/*.css\""
+  },
   "devDependencies": {
     "hint": "7.x",
     "stylelint": "^15.1.0",
