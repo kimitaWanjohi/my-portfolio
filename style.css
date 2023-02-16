@@ -58,7 +58,7 @@ body {
 
 .socials ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -94,7 +94,6 @@ body {
   }
 
   .socials {
-    width: 50%;
     margin: 8px auto 8px auto;
   }
 }
