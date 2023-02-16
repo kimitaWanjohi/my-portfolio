@@ -7,13 +7,14 @@
   "license": "MIT",
   "scripts": {
     "hint": "hint .",
-    "stylelint": "stylelint \"**/*.css\""
+    "stylelint": "stylelint \"**/*.css\"",
+    "stylelint:fix": "stylelint \"**/*.css\" --fix --allow-empty-input"
   },
   "devDependencies": {
     "hint": "7.x",
-    "stylelint": "^15.1.0",
-    "stylelint-config-standard": "^30.0.1",
-    "stylelint-csstree-validator": "^2.1.0",
-    "stylelint-scss": "^4.4.0"
+    "stylelint": "13.x",
+    "stylelint-config-standard": "21.x",
+    "stylelint-csstree-validator": "1.x",
+    "stylelint-scss": "3.x"
   }
 }
