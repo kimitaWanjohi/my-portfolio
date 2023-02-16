@@ -47,6 +47,9 @@ After you're finished please remove all the comments and instructions!
     - [Install](#install)
   - [👥 Authors ](#-authors-)
   - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
   - [📝 License ](#-license-)
 
 <!-- PROJECT DESCRIPTION -->
@@ -158,6 +161,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
+
 > Write a message to encourage readers to support your project
 
 If you like this project feel free to leave comments and contact via given authors information above.
@@ -165,6 +169,9 @@ If you like this project feel free to leave comments and contact via given autho
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+- [Microverse](https://www.microverse.org/)
+- [kimita]('https://github.com/kimitawanjohi')
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
