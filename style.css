@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logo {
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+  color: #28352f;
+}
+
+.bars {
+  width: 30px;
+  height: 12px;
+}
+
+.headline {
+  background: url('assets/header-illsutration-mobile.svg') no-repeat center;
+  background-size: 100%;
+  overflow: hidden;
+}
+
+.headline div {
+  padding: 0.5rem 2rem;
+}
+
+.headline h1 {
+  font-weight: 700;
+  font-size: 40px;
+  color: #172b4d;
+  margin: 1.5rem auto 0 auto;
+}
+
+.headline h2 {
+  font-weight: 700;
+  font-size: 32px;
+  color: #36b37e;
+  margin: 1.5rem auto 0 auto;
+}
+
+.headline p {
+  font-weight: 400;
+  font-size: 20px;
+  color: #172b4d;
+  padding: 0 1rem 0 1rem;
+  margin: 1rem auto 1rem auto;
+}
+
+.socials {
+  margin: 0.5rem auto 0.5rem auto;
+}
+
+.socials ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.socials li {
+  list-style: none;
+}
+
+.scroll-down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem auto 0.5rem auto;
+}
+
+@media screen and (min-width: 320px) {
+  .navbar {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+  }
+
+  .headline {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    overflow-wrap: normal;
+  }
+
+  .socials {
+    margin: 8px auto 8px auto;
+  }
+}
