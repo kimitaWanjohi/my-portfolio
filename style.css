@@ -5,7 +5,6 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
 }
 
 .logo {
@@ -25,6 +24,10 @@ body {
   background: url('assets/header-illsutration-mobile.svg') no-repeat center;
   background-size: 100%;
   overflow: hidden;
+}
+
+.headline div {
+    padding: 0.5rem 2rem;
 }
 
 .headline h1 {
@@ -50,18 +53,17 @@ body {
 }
 
 .socials {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0.5rem auto 0.5rem auto;
+    margin: .5rem auto .5rem auto;
+}
+
+.socials ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .socials li {
   list-style: none;
-}
-
-.navbar {
-  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
 
 .scroll-down {
@@ -71,29 +73,14 @@ body {
   margin: 0.5rem auto 0.5rem auto;
 }
 
-.icon-btn {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 1px solid #36b37e;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-}
 
-.icon-btn:hover {
-  background-color: #36b37e;
-  border: 1px solid #36b37e;
-}
-
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 320px) {
   .navbar {
     height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10px;
+    padding: 0 24px;
   }
 
   .headline {
