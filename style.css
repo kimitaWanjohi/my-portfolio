@@ -33,9 +33,9 @@ body {
   background-size: 100%;
   overflow: hidden;
 }
-
-.headline .container {
-  padding: 0.5rem 2rem;
+ 
+.container {
+  padding: 0.5rem .5rem;
 }
 
 .main-title {
@@ -116,7 +116,7 @@ body {
   margin-top: 1rem;
 }
 
-.work-row {
+.row {
   margin-top: 2rem;
   display: grid;
   justify-content: center;
@@ -144,6 +144,7 @@ body {
 
 .card-body {
   display: flex;
+  width: 100%;
   flex-direction: column;
   justify-content: start;
   align-items: center;
@@ -213,6 +214,46 @@ body {
   transition: all 0.3s ease-in-out;
 }
 
+.about-card {
+  margin: 0.5rem auto;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  background: #EBF0EE;
+  border: 1px solid #C1C7D0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem .5rem;
+}
+
+about-title {
+  color: #3A4A42;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.about-card-tags {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+
+.about-card-tags li {
+  background: #fff;
+  border-radius: 4px;
+  color: #36b37e;
+  padding: 8px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  list-style: none;
+  margin-right: 0.2rem;
+  margin-left: 0.2rem;
+}
+
 @media screen and (min-width: 320px) {
   .navbar {
     height: 50px;
@@ -233,8 +274,8 @@ body {
     overflow-wrap: normal;
   }
 
-  .work-row {
-    grid-template-columns: 350px;
+  .row {
+    grid-template-columns: 330px;
   }
 
   .underline {
