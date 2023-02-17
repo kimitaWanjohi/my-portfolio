@@ -7,6 +7,11 @@ body {
   box-sizing: border-box;
 }
 
+
+ul { 
+  padding-inline-start: 0;
+  padding: 0;
+}
 /* .section {
 
 } */
@@ -161,6 +166,8 @@ body {
 .card-tags {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
   width: 100%;
 }
 
@@ -237,7 +244,10 @@ about-title {
 
 .about-card-tags {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: row;
+  flex-wrap: wrap;
   width: 100%;
 }
 
@@ -250,8 +260,8 @@ about-title {
   font-size: 12px;
   font-weight: 600;
   list-style: none;
-  margin-right: 0.2rem;
-  margin-left: 0.2rem;
+  margin: 0.2rem;
+
 }
 
 @media screen and (min-width: 320px) {
