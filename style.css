@@ -26,7 +26,7 @@ body {
   overflow: hidden;
 }
 
-.headline div {
+.headline .container {
   padding: 0.5rem 2rem;
 }
 
@@ -67,10 +67,25 @@ body {
 }
 
 .scroll-down {
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0.5rem auto 0.5rem auto;
+}
+
+.icon-btn {
+  width: 40px;
+  height: 40px;
+  padding: .5rem;
+  border: 1px solid #DFE1E6;
+  border-radius: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-btn:hover {
+  background: #36b37e;
 }
 
 @media screen and (min-width: 320px) {
