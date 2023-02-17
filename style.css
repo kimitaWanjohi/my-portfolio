@@ -7,11 +7,11 @@ body {
   box-sizing: border-box;
 }
 
-
-ul { 
+ul {
   padding-inline-start: 0;
   padding: 0;
 }
+
 /* .section {
 
 } */
@@ -38,9 +38,9 @@ ul {
   background-size: 100%;
   overflow: hidden;
 }
- 
+
 .container {
-  padding: 0.5rem .5rem;
+  padding: 0.5rem 0.5rem;
 }
 
 .main-title {
@@ -90,8 +90,8 @@ ul {
 .icon-btn {
   width: 40px;
   height: 40px;
-  padding: .5rem;
-  border: 1px solid #DFE1E6;
+  padding: 0.5rem;
+  border: 1px solid #dfe1e6;
   border-radius: 32px;
   display: flex;
   justify-content: center;
@@ -135,7 +135,7 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .card-media {
@@ -157,7 +157,7 @@ ul {
 }
 
 .card-title {
-  color: #3A4A42;
+  color: #3a4a42;
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
@@ -172,10 +172,10 @@ ul {
 }
 
 .card-tags li {
-  background: #EBF0EE;
+  background: #ebf0ee;
   border-radius: 4px;
   padding: 8px 12px;
-  color: #172B4D;
+  color: #172b4d;
   font-size: 12px;
   font-weight: 600;
   list-style: none;
@@ -184,7 +184,7 @@ ul {
 }
 
 .card-btn {
-  padding:  .8rem 1rem;
+  padding: 0.8rem 1rem;
   letter-spacing: 0.03em;
   font-size: 17px;
   color: #fff;
@@ -207,7 +207,7 @@ ul {
 }
 
 .about-btn {
-  padding:  .8rem 1rem;
+  padding: 0.8rem 1rem;
   letter-spacing: 0.03em;
   font-size: 17px;
   color: #fff;
@@ -225,18 +225,18 @@ ul {
   margin: 0.5rem auto;
   width: 100%;
   border-radius: 8px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  background: #EBF0EE;
-  border: 1px solid #C1C7D0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background: #ebf0ee;
+  border: 1px solid #c1c7d0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem .5rem;
+  padding: 2rem 0.5rem;
 }
 
-about-title {
-  color: #3A4A42;
+.about-title {
+  color: #3a4a42;
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
@@ -251,7 +251,6 @@ about-title {
   width: 100%;
 }
 
-
 .about-card-tags li {
   background: #fff;
   border-radius: 4px;
@@ -261,7 +260,6 @@ about-title {
   font-weight: 600;
   list-style: none;
   margin: 0.2rem;
-
 }
 
 @media screen and (min-width: 320px) {
@@ -292,5 +290,4 @@ about-title {
     margin-top: 1rem;
     width: 48px;
   }
-
 }
