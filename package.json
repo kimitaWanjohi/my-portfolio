@@ -8,7 +8,7 @@
   "scripts": {
     "hint": "hint .",
     "stylelint": "stylelint \"**/*.css\"",
-    "stylelint:fix": "stylelint \"**/*.css\" --fix --allow-empty-input"
+    "stylelint:fix": "stylelint \"**/*.css\" --fix"
   },
   "devDependencies": {
     "hint": "7.x",
