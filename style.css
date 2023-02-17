@@ -176,7 +176,7 @@ body {
 }
 
 .card-btn {
-  padding:  4px 6px;
+  padding:  .8rem 1rem;
   letter-spacing: 0.03em;
   font-size: 17px;
   color: #fff;
@@ -186,6 +186,29 @@ body {
 }
 
 .card-btn:hover {
+  background: #45c58f;
+  transition: all 0.3s ease-in-out;
+}
+
+.about {
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-btn {
+  padding:  .8rem 1rem;
+  letter-spacing: 0.03em;
+  font-size: 17px;
+  color: #fff;
+  background: #36b37e;
+  border-radius: 4px;
+  border: none;
+}
+
+.about-btn:hover {
   background: #45c58f;
   transition: all 0.3s ease-in-out;
 }
