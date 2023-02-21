@@ -7,9 +7,56 @@ body {
   box-sizing: border-box;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-resizer {
+  border: #45c58f 2px solid;
+  width: 20px;
+}
+
 ul {
   padding-inline-start: 0;
   padding: 0;
+}
+
+/*  utility classes  */
+
+.mb-2 {
+  margin-bottom: 1rem;
+}
+
+.mt-2 {
+  margin-top: 1rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute-b-r {
+  position: absolute;
+  bottom: 3rem;
+  right: 0;
 }
 
 /* .section {
@@ -260,6 +307,39 @@ ul {
   font-weight: 600;
   list-style: none;
   margin: 0.2rem;
+}
+
+/* contact section  */
+
+.form-control {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  min-height: 48px;
+  border: 1px solid #60c095;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #172b4d;
+  margin-bottom: 1rem;
+}
+
+.form-control:focus {
+  outline: none;
+  border: 1px solid #36b37e;
+}
+
+.form-btn {
+  padding: 0.8rem 1rem;
+  letter-spacing: 0.03em;
+  font-size: 17px;
+  color: #fff;
+  background: #36b37e;
+  border-radius: 4px;
+  border: none;
+}
+
+.form-btn:hover {
+  background: #45c58f;
+  transition: all 0.3s ease-in-out;
 }
 
 @media screen and (min-width: 320px) {
