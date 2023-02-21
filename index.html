@@ -281,15 +281,15 @@
                     I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
                 </h1>
                 
-                <form class="w-full p-2 mt-2">
+                <form class="w-full p-2 mt-2"   action="https://formspree.io/f/xlekblnd" method="POST">
                     <div class="mb-2">
-                        <input type="text" class="form-control w-full" placeholder="Full name">
+                        <input type="text" name="name" required id="name" class="form-control w-full" placeholder="Full name">
                     </div>
                     <div class="mb-2">
-                        <input type="email" class="form-control w-full" placeholder="Email Address">
+                        <input type="email" name="email" required id="email" class="form-control w-full" placeholder="Email Address">
                     </div>
                     <div class="mb-2">
-                        <textarea rows="4" cols="auto" class="form-control w-full" placeholder="Enter text here"></textarea>
+                        <textarea rows="4" cols="auto" maxlength="500" id="message" name="message" required class="form-control w-full" placeholder="Enter text here"></textarea>
                     </div>
                     <div class="mb2">
                         <button class="form-btn">Get in touch</button>
