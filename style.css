@@ -319,10 +319,6 @@ ul {
   border: 1px solid #36b37e;
 }
 
-.form-control::placeholder {
-  color: #172b4d;
-}
-
 .form-btn {
   padding: 0.8rem 1rem;
   letter-spacing: 0.03em;
