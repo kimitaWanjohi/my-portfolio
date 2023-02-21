@@ -40,6 +40,15 @@ ul {
   padding: 0.5rem;
 }
 
+.relative {
+  position: relative;
+}
+
+.absolute-b-r {
+  position: absolute;
+  bottom: 3rem;
+  right: 0;
+}
 
 /* .section {
 
