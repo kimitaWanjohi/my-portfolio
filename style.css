@@ -22,6 +22,7 @@ ul {
   padding-inline-start: 0;
   padding: 0;
 }
+
 /*  utility classes  */
 
 .mb-2 {
@@ -306,7 +307,7 @@ ul {
   width: 100%;
   padding: 0.5rem 1rem;
   min-height: 48px;
-  border: 1px solid #60C095;
+  border: 1px solid #60c095;
   border-radius: 4px;
   font-size: 16px;
   color: #172b4d;
