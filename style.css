@@ -408,13 +408,39 @@ ul {
   }
 
   .navbar-lg ul li {
-    margin: 0 1rem;
+    margin: 0 0.5rem;
   }
 
   .navbar-lg ul li a {
     color: #172b4d;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 400;
     text-decoration: none;
+  }
+
+  .headline {
+    background: url('assets/Header-llustration-desktop.svg') no-repeat center top;
+    background-size: cover;
+    height: 100vh;
+    margin-bottom: 8em;
+  }
+
+  .headline .container {
+    padding: 1rem 20%;
+  }
+
+  .headline .section {
+    height: 100vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    overflow-wrap: normal;
+  }
+
+  .row {
+    grid-template-columns: auto auto auto;
+    gap: 2rem;
   }
 }
