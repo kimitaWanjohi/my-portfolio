@@ -5,6 +5,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -67,7 +68,8 @@ ul {
 
 .sticky {
   position: fixed;
-  width: 99%;
+  width: 100%;
+  box-sizing: border-box;
   top: 0;
   z-index: 100;
 }
@@ -195,6 +197,7 @@ ul {
   border-radius: 8px;
   display: flex;
   flex-direction: column;
+  max-width: 350px;
   align-items: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
@@ -368,7 +371,6 @@ ul {
     align-items: center;
     padding: 0 24px;
     background-color: white;
-    box-shadow: gray 0 0 5px;
   }
 
   .navbar-lg {
@@ -428,8 +430,7 @@ ul {
     justify-content: center;
     align-items: center;
     padding: 1.5rem 2rem;
-    background-color: white;
-    box-shadow: gray 0 0 5px;
+    background: transparent;
   }
 
   .navbar-lg ul {
@@ -437,6 +438,9 @@ ul {
     justify-content: space-between;
     align-items: center;
     list-style: none;
+    border-radius: 4px;
+    background-color: white;
+    padding: 0.5rem 1rem;
   }
 
   .navbar-lg ul li {
