@@ -12,7 +12,7 @@
     <div class="page">
         <section class="headline">
             <!-- mobile nav -->
-            <header class="navbar-sm">
+            <header class="navbar-sm sticky">
                 <div>
                     <h4>Welcome</h4>
                 </div>
@@ -22,7 +22,7 @@
             </header>
         
             <!-- desktop nav -->
-            <header class="navbar-lg">
+            <header class="navbar-lg sticky">
                 <nav>
                     <ul>
                         <li>
@@ -202,24 +202,6 @@
                         </div>
                     </div>
 
-                    <div class="card">
-                        <div class="card-media" style="background-image: url('assets/placeholder.webp');">
-                        </div>
-                        <div class="card-body">
-                            <h2 class="card-title">
-                                Multi-Post Stories <br/>
-                                Gain+Glory
-                            </h2>
-                            <ul class="card-tags">
-                                <li>Ruby on rails</li>
-                                <li>css</li>
-                                <li>JavaScript</li>
-                                <li>html</li>
-                            </ul>
-                            <button class="card-btn">See Project</button>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </section>
@@ -230,6 +212,10 @@
                 <div class="about">
                     <img class="ill-2" src="assets/ill-mb-2.svg" alt="">
                     <img class="ill-1" src="assets/ill-mb-1.svg" alt="">
+
+                    <img class="ill-2lg hidden" src="assets/illustration1-desktop.svg" alt="">
+                    <img class="ill-1lg hidden" src="assets/illustration-desktop.svg" alt="">
+
                     <h1 class="main-title">
                         About me
                     </h1>
@@ -295,24 +281,29 @@
         <!-- Contact section -->
         <section class="section">
             <div class="container relative">
-                <h1 class="main-title p-2">
-                    I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
-                </h1>
-                
-                <form class="w-full flex flex-col p-2 mt-2" action="https://formspree.io/f/xlekblnd" method="POST">
-                    <div class="mb-2">
-                        <input type="text" name="name" maxlength="30" required id="name" class="form-control w-full" placeholder="Full name">
-                    </div>
-                    <div class="mb-2">
-                        <input type="email" name="email" required id="email" class="form-control w-full" placeholder="Email Address">
-                    </div>
-                    <div class="mb-2">
-                        <textarea rows="4" cols="auto" maxlength="500" id="message" name="message" required class="form-control w-full" placeholder="Enter text here"></textarea>
-                    </div>
-                    <div class="mb2">
-                        <button class="form-btn">Get in touch</button>
-                    </div>
-                </form>
+                <div class="lg-grid">
+                    <h1 class="main-title">
+                        I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
+                    </h1>
+                    
+                    <form class="w-full flex justify-start flex-col p-2 mt-2" action="https://formspree.io/f/xlekblnd" method="POST">
+                        <div class="flex gap-2">
+
+                            <div class="mb-2 w-full">
+                                <input type="text" name="name" maxlength="30" required id="name" class="form-control w-full" placeholder="Full name">
+                            </div>
+                            <div class="mb-2 w-full">
+                                <input type="email" name="email" required id="email" class="form-control w-full" placeholder="Email Address">
+                            </div>
+                        </div>
+                        <div class="mb-2">
+                            <textarea rows="4" cols="auto" maxlength="500" id="message" name="message" required class="form-control w-full" placeholder="Enter text here"></textarea>
+                        </div>
+                        <div class="mb2 lg-flex">
+                            <button class="form-btn">Get in touch</button>
+                        </div>
+                    </form>
+                </div>
 
                 <div class="socials">
                     <ul>
