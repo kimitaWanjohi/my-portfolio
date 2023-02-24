@@ -9,58 +9,78 @@
     <title>Kimita | Portfolio</title>
 </head>
 <body>
-    <div class="page">
-        <header class="navbar">
-            <div>
-                <h4>Welcome</h4>
-            </div>
-            <nav>
-                <i class="fa fa-bars bars" aria-hidden="true"></i>
-            </nav>
-        </header>
-
-        <section class="headline section">
-            <div class="p-2 container">
-                <h1 class="main-title">Hi There. I'm Kimita</h1>
-                <h2 class="sub-title">I'm a software developer</h2>
-                <p class="description"> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
-                    don’t hestiate to contact me.
-                </p>
-                <div class="socials">
+    <main class="page">
+        <section class="headline">
+            <!-- mobile nav -->
+            <header class="navbar-sm sticky">
+                <div>
+                    <h4>Welcome</h4>
+                </div>
+                <nav>
+                    <i class="fa fa-bars bars" aria-hidden="true"></i>
+                </nav>
+            </header>
+        
+            <!-- desktop nav -->
+            <header class="navbar-lg sticky">
+                <nav>
                     <ul>
                         <li>
-                            <a href="">
-                                <img src="assets/twitter.svg" alt="">
-                            </a>
+                            <a href="#">Portfolio</a>
                         </li>
                         <li>
-                            <a href="">
-                                <img src="assets/Linkedin icon.svg" alt="">
-                            </a>
+                            <a href="#">About</a>
                         </li>
                         <li>
-                            <a href="#">
-                                <img src="assets/medium.svg" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/kimitawanjohi">
-                                <img src="assets/github.svg" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="assets/angellist-1.svg" alt="">
-                            </a>
+                            <a href="#">Contact</a>
                         </li>
                     </ul>
+                </nav>
+            </header>
+        
+            <section class="section">
+                <div class="p-2 container">
+                    <h1 class="main-title">Hi There. I'm Kimita</h1>
+                    <h2 class="sub-title">I'm a software developer</h2>
+                    <p class="description"> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
+                        don’t hestiate to contact me.
+                    </p>
+                    <div class="socials mt-2">
+                        <ul>
+                            <li>
+                                <a href="https://github.com/kimitawanjohi">
+                                    <img src="assets/github.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="assets/Linkedin icon.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="assets/angellist-1.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="assets/twitter.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="assets/medium.svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="scroll-down">
-                <div class="icon-btn">
-                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                <div class="scroll-down">
+                    <div class="icon-btn">
+                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                    </div>
                 </div>
-            </div>
+            </section>
         </section>
         <!-- Work section -->
         <section class="section">
@@ -182,24 +202,6 @@
                         </div>
                     </div>
 
-                    <div class="card">
-                        <div class="card-media" style="background-image: url('assets/placeholder.webp');">
-                        </div>
-                        <div class="card-body">
-                            <h2 class="card-title">
-                                Multi-Post Stories <br/>
-                                Gain+Glory
-                            </h2>
-                            <ul class="card-tags">
-                                <li>Ruby on rails</li>
-                                <li>css</li>
-                                <li>JavaScript</li>
-                                <li>html</li>
-                            </ul>
-                            <button class="card-btn">See Project</button>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </section>
@@ -210,6 +212,10 @@
                 <div class="about">
                     <img class="ill-2" src="assets/ill-mb-2.svg" alt="">
                     <img class="ill-1" src="assets/ill-mb-1.svg" alt="">
+
+                    <img class="ill-2lg hidden" src="assets/illustration1-desktop.svg" alt="">
+                    <img class="ill-1lg hidden" src="assets/illustration-desktop.svg" alt="">
+
                     <h1 class="main-title">
                         About me
                     </h1>
@@ -237,9 +243,7 @@
                             <li>Css</li>
                         </ul>
                     </div>
-                </div>
 
-                <div class="row">
                     
                     <div class="about-card">
                         <div>
@@ -277,57 +281,72 @@
         <!-- Contact section -->
         <section class="section">
             <div class="container relative">
-                <h1 class="main-title p-2">
-                    I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
-                </h1>
-                
-                <form class="w-full flex flex-col p-2 mt-2" action="https://formspree.io/f/xlekblnd" method="POST">
-                    <div class="mb-2">
-                        <input type="text" name="name" maxlength="30" required id="name" class="form-control w-full" placeholder="Full name">
-                    </div>
-                    <div class="mb-2">
-                        <input type="email" name="email" required id="email" class="form-control w-full" placeholder="Email Address">
-                    </div>
-                    <div class="mb-2">
-                        <textarea rows="4" cols="auto" maxlength="500" id="message" name="message" required class="form-control w-full" placeholder="Enter text here"></textarea>
-                    </div>
-                    <div class="mb2">
-                        <button class="form-btn">Get in touch</button>
-                    </div>
-                </form>
+                <div class="lg-grid">
+                    <h1 class="main-title">
+                        I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
+                    </h1>
+                    
+                    <form class="w-full flex justify-start flex-col mt-2" action="https://formspree.io/f/xlekblnd" method="POST">
+                        <div class="flex gap-2">
 
-                <div class="socials">
-                    <ul>
-                        <li>
-                            <a href="">
-                                <img src="assets/twitter.svg" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <img src="assets/Linkedin icon.svg" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="assets/medium.svg" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/kimitawanjohi">
-                                <img src="assets/github.svg" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="assets/angellist-1.svg" alt="">
-                            </a>
-                        </li>
-                    </ul>
+                            <div class="mb-2 w-full">
+                                <input type="text" name="name" maxlength="30" required id="name" class="form-control w-full" placeholder="Full name">
+                            </div>
+                            <div class="mb-2 w-full hidden">
+                                <input type="text" name="lname" maxlength="30" id="lname" class="form-control w-full" placeholder="lastname">
+                            </div>
+                        </div>
+                        <div class="mb-2 w-full">
+                            <input type="email" name="email" required id="email" class="form-control w-full" placeholder="Email Address">
+                        </div>
+                        <div class="mb-2">
+                            <textarea rows="4" cols="auto" maxlength="500" id="message" name="message" required class="form-control w-full" placeholder="Enter text here"></textarea>
+                        </div>
+                        <div class="mb2 lg-flex">
+                            <button class="form-btn">Get in touch</button>
+                        </div>
+                    </form>
                 </div>
-                <img class="absolute-b-r" src="assets/illustration-contact-form.svg" alt="">
             </div>
         </section>
-    </div>
+
+        <section class="w-full relative">
+            <div class="contact-img">
+                <img class="absolute-b-r lg-hidden" src="assets/illustration-contact-form.svg" alt="">
+                <img class="hidden absolute-b-r" src="assets/contact-right.svg" alt="">
+                <img class="hidden absolute-l-b" src="assets/contact-bottom-left.svg" alt="">
+                <img class="hidden absolute-b-l" src="assets/contact-left.svg" alt="">
+            </div>
+            <div class="socials mt-2">
+                <ul>
+                    <li>
+                        <a href="https://github.com/kimitawanjohi">
+                            <img src="assets/github.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="assets/Linkedin icon.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/angellist-1.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="assets/twitter.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/medium.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
