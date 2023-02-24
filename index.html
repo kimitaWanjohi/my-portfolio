@@ -9,7 +9,7 @@
     <title>Kimita | Portfolio</title>
 </head>
 <body>
-    <div class="page">
+    <main class="page">
         <section class="headline">
             <!-- mobile nav -->
             <header class="navbar-sm sticky">
@@ -45,11 +45,11 @@
                     <p class="description"> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
                         don’t hestiate to contact me.
                     </p>
-                    <div class="socials">
+                    <div class="socials mt-2">
                         <ul>
                             <li>
-                                <a href="">
-                                    <img src="assets/twitter.svg" alt="">
+                                <a href="https://github.com/kimitawanjohi">
+                                    <img src="assets/github.svg" alt="">
                                 </a>
                             </li>
                             <li>
@@ -59,17 +59,17 @@
                             </li>
                             <li>
                                 <a href="#">
-                                    <img src="assets/medium.svg" alt="">
+                                    <img src="assets/angellist-1.svg" alt="">
                                 </a>
                             </li>
                             <li>
-                                <a href="https://github.com/kimitawanjohi">
-                                    <img src="assets/github.svg" alt="">
+                                <a href="">
+                                    <img src="assets/twitter.svg" alt="">
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <img src="assets/angellist-1.svg" alt="">
+                                    <img src="assets/medium.svg" alt="">
                                 </a>
                             </li>
                         </ul>
@@ -286,15 +286,18 @@
                         I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
                     </h1>
                     
-                    <form class="w-full flex justify-start flex-col p-2 mt-2" action="https://formspree.io/f/xlekblnd" method="POST">
+                    <form class="w-full flex justify-start flex-col mt-2" action="https://formspree.io/f/xlekblnd" method="POST">
                         <div class="flex gap-2">
 
                             <div class="mb-2 w-full">
                                 <input type="text" name="name" maxlength="30" required id="name" class="form-control w-full" placeholder="Full name">
                             </div>
-                            <div class="mb-2 w-full">
-                                <input type="email" name="email" required id="email" class="form-control w-full" placeholder="Email Address">
+                            <div class="mb-2 w-full hidden">
+                                <input type="text" name="lname" maxlength="30" id="lname" class="form-control w-full" placeholder="lastname">
                             </div>
+                        </div>
+                        <div class="mb-2 w-full">
+                            <input type="email" name="email" required id="email" class="form-control w-full" placeholder="Email Address">
                         </div>
                         <div class="mb-2">
                             <textarea rows="4" cols="auto" maxlength="500" id="message" name="message" required class="form-control w-full" placeholder="Enter text here"></textarea>
@@ -304,39 +307,46 @@
                         </div>
                     </form>
                 </div>
-
-                <div class="socials">
-                    <ul>
-                        <li>
-                            <a href="">
-                                <img src="assets/twitter.svg" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <img src="assets/Linkedin icon.svg" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="assets/medium.svg" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/kimitawanjohi">
-                                <img src="assets/github.svg" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="assets/angellist-1.svg" alt="">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <img class="absolute-b-r" src="assets/illustration-contact-form.svg" alt="">
             </div>
         </section>
-    </div>
+
+        <section class="w-full relative">
+            <div class="contact-img">
+                <img class="absolute-b-r lg-hidden" src="assets/illustration-contact-form.svg" alt="">
+                <img class="hidden absolute-b-r" src="assets/contact-right.svg" alt="">
+                <img class="hidden absolute-l-b" src="assets/contact-bottom-left.svg" alt="">
+                <img class="hidden absolute-b-l" src="assets/contact-left.svg" alt="">
+            </div>
+            <div class="socials mt-2">
+                <ul>
+                    <li>
+                        <a href="https://github.com/kimitawanjohi">
+                            <img src="assets/github.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="assets/Linkedin icon.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/angellist-1.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="assets/twitter.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/medium.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

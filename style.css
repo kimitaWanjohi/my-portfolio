@@ -105,6 +105,7 @@ ul {
 
 .container {
   padding: 0.5rem 0.5rem;
+  max-width: 1171px;
 }
 
 .main-title {
@@ -402,6 +403,10 @@ ul {
     overflow-wrap: normal;
   }
 
+  .headline .container {
+    padding: 2rem;
+  }
+
   .about-card {
     max-width: 300px;
   }
@@ -418,10 +423,22 @@ ul {
   .hidden {
     display: none;
   }
+
+  .lg-hidden {
+    display: block;
+  }
 }
 
 @media only screen and (min-width: 768px) {
   .navbar-sm {
+    display: none;
+  }
+
+  .hidden {
+    display: block;
+  }
+
+  lg-hidden {
     display: none;
   }
 
@@ -447,6 +464,16 @@ ul {
     margin: 0 0.5rem;
   }
 
+  .lg-grid .main-title {
+    font-size: 30px;
+    font-weight: 600;
+    color: #172b4d;
+    text-align: start;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+
   .navbar-lg ul li a {
     color: #172b4d;
     font-size: 16px;
@@ -459,6 +486,7 @@ ul {
     background-size: cover;
     height: 100vh;
     margin-bottom: 8em;
+    padding-top: 4rem;
   }
 
   .headline .container {
@@ -477,9 +505,10 @@ ul {
 
   .row {
     grid-template-columns: auto auto auto;
-    gap: 2rem;
+    gap: 1rem;
     justify-content: center;
     align-items: center;
+    padding: .5rem;
   }
 
   .ill-1 {
@@ -512,21 +541,86 @@ ul {
 
   .lg-grid {
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: 45% 50%;
     gap: 2rem;
-    padding: 2rem 5%;
+    padding: 2rem 1rem;
+  }
+
+  .about-card {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .container-lg {
+    width: 100%;
+    margin: auto;
   }
 
   .lg-flex {
     display: flex;
   }
+
+  .absolute-b-r {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 250px;
+  }
+
+  .absolute-b-l {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 200px;
+  }
+
+  .absolute-l-b {
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    height: auto;
+  }
+
+  .contact-img {
+    margin: 2rem;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
+
+  .headline {
+    background: url('assets/Header-llustration-desktop.svg') no-repeat center top;
+    background-size: cover;
+    height: 200vh;
+    margin-bottom: 8em;
+    padding-top: 10rem;
+  }
+
+  .headline .container {
+    padding: 1rem 20%;
+  }
+
   .lg-grid {
     display: grid;
     grid-template-columns: 45% 50%;
     gap: 2rem;
-    padding: 2rem 5%;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    box-sizing: border-box;
+    width: 100%;
   }
+
+  .row {
+    grid-template-columns: 33% 33% 33%;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    box-sizing: border-box;
+    width: 100%;
+    margin: auto;
+    max-width: 1171px;
+  }
+
 }
