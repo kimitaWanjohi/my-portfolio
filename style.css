@@ -438,7 +438,7 @@ ul {
     display: block;
   }
 
-  lg-hidden {
+  .lg-hidden {
     display: none;
   }
 
@@ -508,7 +508,7 @@ ul {
     gap: 1rem;
     justify-content: center;
     align-items: center;
-    padding: .5rem;
+    padding: 0.5rem;
   }
 
   .ill-1 {
@@ -587,7 +587,6 @@ ul {
 }
 
 @media only screen and (min-width: 1024px) {
-
   .headline {
     background: url('assets/Header-llustration-desktop.svg') no-repeat center top;
     background-size: cover;
@@ -619,8 +618,6 @@ ul {
     margin: 2rem;
     box-sizing: border-box;
     width: 100%;
-    margin: auto;
     max-width: 1171px;
   }
-
 }
