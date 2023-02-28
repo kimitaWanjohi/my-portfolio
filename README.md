@@ -85,10 +85,8 @@ After you're finished please remove all the comments and instructions!
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a href="kimitawanjohi.live" name="live-demo">kimitawanjohi.live</a>
+## 🚀 Live Demo <a href="https://kimitawanjohi.live" name="live-demo">kimitawanjohi.live</a>
 
-
-- still in development.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
