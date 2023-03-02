@@ -504,7 +504,7 @@ ul {
   }
 
   .row {
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto;
     gap: 1rem;
     justify-content: center;
     align-items: center;
