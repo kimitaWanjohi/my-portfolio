@@ -40,7 +40,7 @@ After you're finished please remove all the comments and instructions!
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
-  - [� Live Demo kimitawanjohi.live](#-live-demo-kimitawanjohilive)
+  - [🚀 Live Demo kimitawanjohi.live](#-live-demo-kimitawanjohilive)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -85,8 +85,9 @@ After you're finished please remove all the comments and instructions!
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a href="https://kimitawanjohi.live" name="live-demo">kimitawanjohi.live</a>
+## 🚀 Live Demo <a href="kimitawanjohi.live" name="live-demo">kimitawanjohi.live</a>
 
+<img src="assets/screenshot.png">
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

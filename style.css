@@ -8,6 +8,11 @@ body {
   scroll-behavior: smooth;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -504,7 +509,7 @@ ul {
   }
 
   .row {
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto;
     gap: 1rem;
     justify-content: center;
     align-items: center;
