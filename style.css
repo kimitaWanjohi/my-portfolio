@@ -394,8 +394,21 @@ ul {
     z-index: 110;
     background-color: #fff;
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     padding: 2rem 1rem;
+    transition: 0.5s ease-in-out all;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+  }
+
+  .menu-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #9ba2a8a1;
+    width: 100%;
+    height: 100%;
     transition: 0.5s ease-in-out all;
   }
 
@@ -425,7 +438,7 @@ ul {
   }
 
   .mobile-menu-hide {
-    transform: translateX(-100%);
+    transform: translateY(-100%);
   }
 
   .ill-1 {
