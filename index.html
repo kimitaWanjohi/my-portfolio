@@ -13,11 +13,9 @@
         <section class="headline">
             <!-- mobile nav -->
 
-            <header >
-                <div class="navbar-sm sticky">
-                    <h4>Welcome</h4>
-                    <i class="fa fa-bars bars pointer" onclick="showMenu()" aria-hidden="true"></i>
-                </div>
+            <header class="navbar-sm sticky">
+                <h4>Welcome</h4>
+                <i class="fa fa-bars bars pointer" onclick="showMenu()" aria-hidden="true"></i>
             </header>
 
             <div id="menu" class="mobile-menu mobile-menu-hide z-110 fixed">
@@ -27,13 +25,13 @@
                 <nav>
                     <ul>
                         <li class="mt-2">
-                            <a href="#work">Portfolio</a>
+                            <a href="#work" onclick="hideMenu()" >Portfolio</a>
                         </li>
                         <li class="mt-2">
-                            <a href="#about">About</a>
+                            <a href="#about" onclick="hideMenu()" >About</a>
                         </li>
                         <li class="mt-2">
-                            <a href="#contact">Contact</a>
+                            <a href="#contact " onclick="hideMenu()">Contact</a>
                         </li>
                     </ul>
                 </nav>
