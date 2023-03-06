@@ -12,14 +12,32 @@
     <main class="page">
         <section class="headline">
             <!-- mobile nav -->
-            <header class="navbar-sm sticky">
-                <div>
+
+            <header >
+                <div class="navbar-sm sticky">
                     <h4>Welcome</h4>
+                    <i class="fa fa-bars bars pointer" onclick="showMenu()" aria-hidden="true"></i>
+                </div>
+            </header>
+
+            <div id="menu" class="mobile-menu mobile-menu-hide z-110 fixed">
+                <div class="mobile-menu-header">
+                    <img class="pointer" src="assets/Icon.png" onclick="hideMenu()" alt="close">
                 </div>
                 <nav>
-                    <i class="fa fa-bars bars" aria-hidden="true"></i>
+                    <ul>
+                        <li class="mt-2">
+                            <a href="#work">Portfolio</a>
+                        </li>
+                        <li class="mt-2">
+                            <a href="#about">About</a>
+                        </li>
+                        <li class="mt-2">
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
                 </nav>
-            </header>
+            </div>
         
             <!-- desktop nav -->
             <header class="navbar-lg sticky">
@@ -348,5 +366,6 @@
             </div>
         </section>
     </main>
+    <script src="index.js"></script>
 </body>
 </html>
