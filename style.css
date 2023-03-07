@@ -405,6 +405,7 @@ ul {
   border-radius: 10px;
   box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
   box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
 }
 
 .modal-close {
@@ -509,6 +510,10 @@ ul {
   font-size: 16px;
   line-height: 24px;
   color: #172B4D;
+}
+
+.modal-hidden {
+  display: none;
 }
 
 
@@ -862,7 +867,7 @@ ul {
   overflow: hidden;
 }
 
-/* .backdrop-hidden {
+.backdrop-hidden {
   display: none;
-} */
+}
 
