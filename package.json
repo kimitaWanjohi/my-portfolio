@@ -8,9 +8,15 @@
   "scripts": {
     "hint": "hint .",
     "stylelint": "stylelint \"**/*.css\"",
-    "stylelint:fix": "stylelint \"**/*.css\" --fix"
+    "stylelint:fix": "stylelint \"**/*.css\" --fix",
+    "eslint": "eslint .",
+    "eslint:fix": "eslint . --fix"
   },
   "devDependencies": {
+    "babel-eslint": "10.x",
+    "eslint": "7.x",
+    "eslint-config-airbnb-base": "14.x",
+    "eslint-plugin-import": "2.x",
     "hint": "7.x",
     "stylelint": "13.x",
     "stylelint-config-standard": "21.x",
