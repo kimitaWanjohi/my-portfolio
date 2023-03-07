@@ -18,27 +18,27 @@
                 <i class="fa fa-bars bars pointer" onclick="showMenu()" aria-hidden="true"></i>
             </header>
 
-            <div id="menu-backdrop" class="menu-backdrop mobile-menu-hide">
-                <div id="menu" class="mobile-menu mobile-menu-hide z-110 fixed">
-                    <div class="mobile-menu-header">
-                        <img class="pointer" src="assets/Icon.png" onclick="hideMenu()" alt="close">
-                    </div>
-                    <nav>
-                        <ul>
-                            <li class="mt-2">
-                                <a href="#work" onclick="hideMenu()" >Portfolio</a>
-                            </li>
-                            <li class="mt-2">
-                                <a href="#about" onclick="hideMenu()" >About</a>
-                            </li>
-                            <li class="mt-2">
-                                <a href="#contact " onclick="hideMenu()">Contact</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
+            <div id="backdrop" class="backdrop backdrop-hidden">
             </div>
-        
+            <div id="menu" class="mobile-menu mobile-menu-hide z-110 fixed">
+                <div class="mobile-menu-header">
+                    <img class="pointer" src="assets/Icon.png" onclick="hideMenu()" alt="close">
+                </div>
+                <nav>
+                    <ul>
+                        <li class="mt-2">
+                            <a href="#work" onclick="hideMenu()" >Portfolio</a>
+                        </li>
+                        <li class="mt-2">
+                            <a href="#about" onclick="hideMenu()" >About</a>
+                        </li>
+                        <li class="mt-2">
+                            <a href="#contact " onclick="hideMenu()">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+    
             <!-- desktop nav -->
             <header class="navbar-lg sticky">
                 <nav>
