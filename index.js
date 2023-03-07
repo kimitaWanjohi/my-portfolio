@@ -1,7 +1,6 @@
 const menu = document.getElementById('menu');
 const backdrop = document.getElementById('backdrop');
 const works = document.getElementById('works');
-const popup = document.querySelectorAll('.popup');
 
 // eslint-disable-next-line
 function showMenu() {
@@ -78,7 +77,7 @@ const projectsData = [
     liveLink: 'https://www.google.com',
     githubLink: 'https://www.google.com',
     technologies: ['HTML', 'CSS', 'JavaScript'],
-  }
+  },
 ];
 
 function createProjectCards(projects) {
@@ -110,7 +109,7 @@ function createModals(projects) {
     modal.id = `modal-${project.id}`;
     modal.innerHTML = `
     <div class="modal-close">
-        <img class="close-icon" src="assets/Icon.png" alt="close">
+        <img class="close-icon" onclick="closeModal('modal-${project.id}')" src="assets/Icon.png" alt="close">
     </div>
     <div class="modal-media" style="background-image: url('${project.image}');">
     </div>
@@ -144,13 +143,6 @@ function createModals(projects) {
   });
 }
 
-function showModal(btn) {
-  const modal = document.getElementById(btn.dataset.target);
-  modal.classList.remove('modal-hidden');
-  backdrop.classList.remove('backdrop-hidden');
-}
-
 createModals(projectsData);
-
 
 createProjectCards(projectsData);
