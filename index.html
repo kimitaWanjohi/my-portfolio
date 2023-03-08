@@ -18,27 +18,27 @@
                 <i class="fa fa-bars bars pointer" onclick="showMenu()" aria-hidden="true"></i>
             </header>
 
-            <div id="menu-backdrop" class="menu-backdrop mobile-menu-hide">
-                <div id="menu" class="mobile-menu mobile-menu-hide z-110 fixed">
-                    <div class="mobile-menu-header">
-                        <img class="pointer" src="assets/Icon.png" onclick="hideMenu()" alt="close">
-                    </div>
-                    <nav>
-                        <ul>
-                            <li class="mt-2">
-                                <a href="#work" onclick="hideMenu()" >Portfolio</a>
-                            </li>
-                            <li class="mt-2">
-                                <a href="#about" onclick="hideMenu()" >About</a>
-                            </li>
-                            <li class="mt-2">
-                                <a href="#contact " onclick="hideMenu()">Contact</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
+            <div id="backdrop" class="backdrop backdrop-hidden">
             </div>
-        
+            <div id="menu" class="mobile-menu mobile-menu-hide z-110 fixed">
+                <div class="mobile-menu-header">
+                    <img class="pointer" src="assets/Icon.png" onclick="hideMenu()" alt="close">
+                </div>
+                <nav>
+                    <ul>
+                        <li class="mt-2">
+                            <a href="#work" onclick="hideMenu()" >Portfolio</a>
+                        </li>
+                        <li class="mt-2">
+                            <a href="#about" onclick="hideMenu()" >About</a>
+                        </li>
+                        <li class="mt-2">
+                            <a href="#contact " onclick="hideMenu()">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+    
             <!-- desktop nav -->
             <header class="navbar-lg sticky">
                 <nav>
@@ -110,117 +110,7 @@
                     <div class="underline"></div>
                 </div>
 
-                <div class="row">
-
-                    <div class="card">
-                        <div class="card-media" style="background-image: url('assets/placeholder.webp');">
-                        </div>
-                        <div class="card-body">
-                            <h2 class="card-title">
-                                Multi-Post Stories <br/>
-                                Gain+Glory
-                            </h2>
-                            <ul class="card-tags">
-                                <li>Ruby on rails</li>
-                                <li>css</li>
-                                <li>JavaScript</li>
-                                <li>html</li>
-                            </ul>
-                            <button class="card-btn">See Project</button>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-media" style="background-image: url('assets/placeholder.webp');">
-                        </div>
-                        <div class="card-body">
-                            <h2 class="card-title">
-                                Multi-Post Stories <br/>
-                                Gain+Glory
-                            </h2>
-                            <ul class="card-tags">
-                                <li>Ruby on rails</li>
-                                <li>css</li>
-                                <li>JavaScript</li>
-                                <li>html</li>
-                            </ul>
-                            <button class="card-btn">See Project</button>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-media" style="background-image: url('assets/placeholder.webp');">
-                        </div>
-                        <div class="card-body">
-                            <h2 class="card-title">
-                                Multi-Post Stories <br/>
-                                Gain+Glory
-                            </h2>
-                            <ul class="card-tags">
-                                <li>Ruby on rails</li>
-                                <li>css</li>
-                                <li>JavaScript</li>
-                                <li>html</li>
-                            </ul>
-                            <button class="card-btn">See Project</button>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-media" style="background-image: url('assets/placeholder.webp');">
-                        </div>
-                        <div class="card-body">
-                            <h2 class="card-title">
-                                Multi-Post Stories <br/>
-                                Gain+Glory
-                            </h2>
-                            <ul class="card-tags">
-                                <li>Ruby on rails</li>
-                                <li>css</li>
-                                <li>JavaScript</li>
-                                <li>html</li>
-                            </ul>
-                            <button class="card-btn">See Project</button>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-media" style="background-image: url('assets/placeholder.webp');">
-                        </div>
-                        <div class="card-body">
-                            <h2 class="card-title">
-                                Multi-Post Stories <br/>
-                                Gain+Glory
-                            </h2>
-                            <ul class="card-tags">
-                                <li>Ruby on rails</li>
-                                <li>css</li>
-                                <li>JavaScript</li>
-                                <li>html</li>
-                            </ul>
-                            <button class="card-btn">See Project</button>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-media" style="background-image: url('assets/placeholder.webp');">
-                        </div>
-                        <div class="card-body">
-                            <h2 class="card-title">
-                                Multi-Post Stories <br/>
-                                Gain+Glory
-                            </h2>
-                            <ul class="card-tags">
-                                <li>Ruby on rails</li>
-                                <li>css</li>
-                                <li>JavaScript</li>
-                                <li>html</li>
-                            </ul>
-                            <button class="card-btn">See Project</button>
-                        </div>
-                    </div>
-
-                </div>
+                <div class="row" id="works"></div>
             </div>
         </section>
 
