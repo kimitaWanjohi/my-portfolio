@@ -417,8 +417,8 @@ ul {
 
 .close-icon {
   font-size: 24px;
-  background: #EBF0EE;
-  color: #3A4A42;
+  background: #ebf0ee;
+  color: #3a4a42;
   cursor: pointer;
   padding: 0.5rem;
   border-radius: 25%;
@@ -519,6 +519,7 @@ ul {
     right: 7%;
   }
 }
+
 @media screen and (min-width: 320px) {
   .navbar-sm {
     height: 50px;
@@ -859,7 +860,6 @@ ul {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 100;
   background-color: #9ba2a8a1;
   width: 100%;
   height: 100vh;
