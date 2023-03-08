@@ -142,8 +142,16 @@ function createModals(projects) {
     document.body.appendChild(modal);
   });
 }
+function showModal(btn) {
 
+  const modal = document.getElementById(btn.dataset.target); modal.classList.remove('modal-hidden'); backdrop.classList.remove('backdrop-hidden');
 
-createModals(projectsData);
+}
+
+function closeModal(modalId) {
+
+  const modal = document.getElementById(modalId); modal.classList.add('modal-hidden'); backdrop.classList.add('backdrop-hidden');
+
+}
 
 createProjectCards(projectsData);
