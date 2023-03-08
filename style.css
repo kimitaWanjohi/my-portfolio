@@ -417,9 +417,9 @@ ul {
 
 .close-icon {
   font-size: 24px;
-  color: #172b4d;
+  background: #EBF0EE;
+  color: #3A4A42;
   cursor: pointer;
-  background-color: #ebecf0;
   padding: 0.5rem;
   border-radius: 25%;
   transition: all 0.3s ease-in-out;
@@ -456,7 +456,7 @@ ul {
 
 .modal-btns {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -515,11 +515,10 @@ ul {
 @media screen and (max-width: 768px) {
   .modal-close {
     position: absolute;
-    top: 6%;
-    right: 5%;
+    top: 7%;
+    right: 7%;
   }
 }
-
 @media screen and (min-width: 320px) {
   .navbar-sm {
     height: 50px;
@@ -623,8 +622,8 @@ ul {
     display: none;
   }
 
-  .lg-hidden {
-    display: block;
+  .flex-hidden {
+    display: none;
   }
 }
 
@@ -639,6 +638,10 @@ ul {
 
   .hidden {
     display: block;
+  }
+
+  .flex-hidden {
+    display: flex;
   }
 
   .lg-hidden {

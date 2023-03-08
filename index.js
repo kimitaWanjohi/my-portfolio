@@ -119,7 +119,7 @@ function createModals(projects) {
                 ${project.name}
             </h2>
         </div>
-        <div class="modal-btns">
+        <div class="modal-btns flex-hidden">
             <a href="${project.liveLink}" class="modal-btn">
                 See Live
                 <img class="ml-1" src="assets/live-btn.svg" alt="">
@@ -137,6 +137,16 @@ function createModals(projects) {
         <p>
             ${project.description}
         </p>
+        <div class="modal-btns lg-hidden mt-2 flex">
+        <a href="${project.liveLink}" class="modal-btn">
+            See Live
+            <img class="ml-1" src="assets/live-btn.svg" alt="">
+        </a>
+        <a href="${project.githubLink}" class="modal-btn">
+            See Source
+            <img class="ml-1" src="assets/github-btn.svg" alt="">
+        </a>
+    </div>
     </div>
   `;
     document.body.appendChild(modal);
