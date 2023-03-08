@@ -104,6 +104,16 @@ ul {
   flex-grow: 1;
 }
 
+.text-red-500 {
+  color: #f56565;
+}
+
+.text-green-500 {
+  color: #48bb78;
+}
+
+
+
 /* toolbar */
 
 .logo {
