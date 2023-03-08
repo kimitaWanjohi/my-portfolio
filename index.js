@@ -181,23 +181,17 @@ contactForm.addEventListener('submit', (event) => {
     error.textContent = 'Please fill in all fields';
     error.classList.add('text-red-500', 'block', 'mt-2');
     contactForm.insertBefore(error, contactForm.lastChild);
-    return;
-  }
-  else if (email !== email.toLowerCase()) {
+  } else if (email !== email.toLowerCase()) {
     const error = document.createElement('small');
     error.textContent = 'Please enter a lowercase email address';
     error.classList.add('text-red-500', 'block', 'mt-2');
     contactForm.insertBefore(error, contactForm.lastChild);
-    return;
-  }
-  else if (email.indexOf('@') === -1) {
+  } else if (email.indexOf('@') === -1) {
     const error = document.createElement('small');
     error.textContent = 'Please enter a valid email address';
     error.classList.add('text-red-500', 'block', 'mt-2');
     contactForm.insertBefore(error, contactForm.lastChild);
-    return;
-  }
-  else {
+  } else {
     contactForm.submit();
     const success = document.createElement('small');
     success.textContent = 'Your message was sent successfully';
@@ -206,7 +200,6 @@ contactForm.addEventListener('submit', (event) => {
     contactForm.reset();
   }
 });
-
 
 createModals(projectsData);
 createProjectCards(projectsData);
