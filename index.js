@@ -142,16 +142,20 @@ function createModals(projects) {
     document.body.appendChild(modal);
   });
 }
+
+// eslint-disable-next-line no-unused-vars
 function showModal(btn) {
-
-  const modal = document.getElementById(btn.dataset.target); modal.classList.remove('modal-hidden'); backdrop.classList.remove('backdrop-hidden');
-
+  const modal = document.getElementById(btn.dataset.target);
+  modal.classList.remove('modal-hidden');
+  backdrop.classList.remove('backdrop-hidden');
 }
 
+// eslint-disable-next-line no-unused-vars
 function closeModal(modalId) {
-
-  const modal = document.getElementById(modalId); modal.classList.add('modal-hidden'); backdrop.classList.add('backdrop-hidden');
-
+  const modal = document.getElementById(modalId);
+  modal.classList.add('modal-hidden');
+  backdrop.classList.add('backdrop-hidden');
 }
 
+createModals(projectsData);
 createProjectCards(projectsData);
