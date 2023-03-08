@@ -512,6 +512,14 @@ ul {
   display: none;
 }
 
+@media screen and (max-width: 768px) {
+  .modal-close {
+    position: absolute;
+    top: 6%;
+    right: 5%;
+  }
+}
+
 @media screen and (min-width: 320px) {
   .navbar-sm {
     height: 50px;
