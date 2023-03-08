@@ -143,6 +143,7 @@ function createModals(projects) {
   });
 }
 
+
 createModals(projectsData);
 
 createProjectCards(projectsData);
