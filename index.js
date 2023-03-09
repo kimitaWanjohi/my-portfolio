@@ -1,6 +1,7 @@
 const menu = document.getElementById('menu');
 const backdrop = document.getElementById('backdrop');
 const works = document.getElementById('works');
+const contactForm = document.getElementById('contact-form');
 
 // eslint-disable-next-line
 function showMenu() {
@@ -166,6 +167,39 @@ function closeModal(modalId) {
   modal.classList.add('modal-hidden');
   backdrop.classList.add('backdrop-hidden');
 }
+
+// form validation
+contactForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  const email = contactForm.email.value;
+  const fullName = contactForm.name.value;
+  const message = contactForm.message.value;
+
+  if (fullName.length === 0 || email.length === 0 || message.length === 0) {
+    const error = document.createElement('small');
+    error.textContent = 'Please fill in all fields';
+    error.classList.add('text-red-500', 'block', 'mt-2');
+    contactForm.insertBefore(error, contactForm.lastChild);
+  } else if (email !== email.toLowerCase()) {
+    const error = document.createElement('small');
+    error.textContent = 'Please enter a lowercase email address';
+    error.classList.add('text-red-500', 'block', 'mt-2');
+    contactForm.insertBefore(error, contactForm.lastChild);
+  } else if (email.indexOf('@') === -1) {
+    const error = document.createElement('small');
+    error.textContent = 'Please enter a valid email address';
+    error.classList.add('text-red-500', 'block', 'mt-2');
+    contactForm.insertBefore(error, contactForm.lastChild);
+  } else {
+    contactForm.submit();
+    const success = document.createElement('small');
+    success.textContent = 'Your message was sent successfully';
+    success.classList.add('text-green-500', 'block', 'mt-2');
+    contactForm.insertBefore(success, contactForm.lastChild);
+    contactForm.reset();
+  }
+});
 
 createModals(projectsData);
 createProjectCards(projectsData);
