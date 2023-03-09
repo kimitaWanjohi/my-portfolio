@@ -2,9 +2,8 @@ const menu = document.getElementById('menu');
 const backdrop = document.getElementById('backdrop');
 const works = document.getElementById('works');
 const contactForm = document.getElementById('contact-form');
-let fullName = document.getElementById('name');
-let email = document.getElementById('email');
-
+const fullName = document.getElementById('name');
+const email = document.getElementById('email');
 
 // eslint-disable-next-line
 function showMenu() {
@@ -173,7 +172,7 @@ function closeModal(modalId) {
 
 // saving info
 function saveInfo(fullName, email) {
-  let jsonInput = JSON.stringify({ fullName, email });
+  const jsonInput = JSON.stringify({ fullName, email });
   localStorage.setItem('userInfo', jsonInput);
 }
 
@@ -214,7 +213,8 @@ contactForm.addEventListener('submit', (event) => {
 let userInfo = localStorage.getItem('userInfo');
 userInfo = JSON.parse(userInfo);
 
-
+fullName.value = userInfo.fullName;
+email.value = userInfo.email;
 
 createModals(projectsData);
 createProjectCards(projectsData);
