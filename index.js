@@ -2,6 +2,8 @@ const menu = document.getElementById('menu');
 const backdrop = document.getElementById('backdrop');
 const works = document.getElementById('works');
 const contactForm = document.getElementById('contact-form');
+const fullName = document.getElementById('name');
+const email = document.getElementById('email');
 
 // eslint-disable-next-line
 function showMenu() {
@@ -168,6 +170,12 @@ function closeModal(modalId) {
   backdrop.classList.add('backdrop-hidden');
 }
 
+// saving info
+function saveInfo(fullName, email) {
+  const jsonInput = JSON.stringify({ fullName, email });
+  localStorage.setItem('userInfo', jsonInput);
+}
+
 // form validation
 contactForm.addEventListener('submit', (event) => {
   event.preventDefault();
@@ -193,6 +201,7 @@ contactForm.addEventListener('submit', (event) => {
     contactForm.insertBefore(error, contactForm.lastChild);
   } else {
     contactForm.submit();
+    saveInfo(fullName, email);
     const success = document.createElement('small');
     success.textContent = 'Your message was sent successfully';
     success.classList.add('text-green-500', 'block', 'mt-2');
@@ -200,6 +209,12 @@ contactForm.addEventListener('submit', (event) => {
     contactForm.reset();
   }
 });
+
+let userInfo = localStorage.getItem('userInfo');
+userInfo = JSON.parse(userInfo);
+
+fullName.value = userInfo.fullName;
+email.value = userInfo.email;
 
 createModals(projectsData);
 createProjectCards(projectsData);
