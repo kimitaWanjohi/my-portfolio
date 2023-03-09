@@ -214,7 +214,7 @@ contactForm.addEventListener('submit', (event) => {
 let userInfo = localStorage.getItem('userInfo');
 userInfo = JSON.parse(userInfo);
 
-//
+
 
 createModals(projectsData);
 createProjectCards(projectsData);
