@@ -79,6 +79,8 @@ After you're finished please remove all the comments and instructions!
 
 - **[Navigation bar]**
 - **[About section]**
+- **[Contact Form]**
+- **[Projects Popup]**
 <!-- - **[key_feature_3]** -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -147,6 +149,8 @@ Install this project with:
 
 - [ ] **[mobile version]**
 - [ ] **[Desktop version]**
+- [ ] **[Mobile Menu]**
+- [ ] **[Popup Window]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
