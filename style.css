@@ -131,7 +131,7 @@ ul {
 
 .headline {
   background: url('assets/header-illsutration-mobile.svg') no-repeat center;
-  background-size: 100%;
+  background-size: cover;
   overflow: hidden;
 }
 
@@ -805,7 +805,6 @@ ul {
   .headline {
     background: url('assets/Header-llustration-desktop.svg') no-repeat center top;
     background-size: cover;
-    height: 200vh;
     margin-bottom: 8em;
     padding-top: 10rem;
   }

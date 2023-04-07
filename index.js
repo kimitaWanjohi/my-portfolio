@@ -28,9 +28,9 @@ const projectsData = [
     name: 'My tube',
     description:
       'MyTube is a video streaming platform where users can watch videos. It is built using React, ContextAPI, and the Rapid API.',
-    image: 'assets/Snapshoot-Portfolio.png',
-    liveLink: 'https://www.google.com',
-    githubLink: 'https://www.google.com',
+    image: 'assets/projects/mytube.png',
+    liveLink: 'https://mytubeapp.netlify.app',
+    githubLink: 'https://github.com/kimitaWanjohi/mytube',
     technologies: ['MUICSS', 'React', 'RapidAPI'],
   },
   {
