@@ -23,13 +23,13 @@ function hideMenu() {
 const projectsData = [
   {
     id: 1,
-    name: 'Project 1',
+    name: 'My tube',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc. Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc.',
-    image: 'assets/Snapshoot-Portfolio.png',
-    liveLink: 'https://www.google.com',
-    githubLink: 'https://www.google.com',
-    technologies: ['HTML', 'CSS', 'JavaScript'],
+      'MyTube is a video streaming platform where users can watch videos. It is built using React, ContextAPI, and the Rapid API.',
+    image: 'assets/projects/mytube.png',
+    liveLink: 'https://mytubeapp.netlify.app',
+    githubLink: 'https://github.com/kimitaWanjohi/mytube',
+    technologies: ['MUICSS', 'React', 'RapidAPI'],
   },
   {
     id: 2,
@@ -213,8 +213,8 @@ contactForm.addEventListener('submit', (event) => {
 let userInfo = localStorage.getItem('userInfo');
 userInfo = JSON.parse(userInfo);
 
-fullName.value = userInfo.fullName;
-email.value = userInfo.email;
+fullName.value = userInfo?.fullName ? userInfo.fullName : '';
+email.value = userInfo?.email ? userInfo.email : '';
 
 createModals(projectsData);
 createProjectCards(projectsData);
