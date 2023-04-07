@@ -5,8 +5,6 @@ const contactForm = document.getElementById('contact-form');
 const fullName = document.getElementById('name');
 const email = document.getElementById('email');
 
-console.log(fullName, email);
-
 // eslint-disable-next-line
 function showMenu() {
   menu.classList.remove('mobile-menu-hide');
@@ -215,8 +213,8 @@ contactForm.addEventListener('submit', (event) => {
 let userInfo = localStorage.getItem('userInfo');
 userInfo = JSON.parse(userInfo);
 
-fullName.value = userInfo?.fullName? userInfo.fullName : '';
-email.value = userInfo?.email? userInfo.email : '';
+fullName.value = userInfo?.fullName ? userInfo.fullName : '';
+email.value = userInfo?.email ? userInfo.email : '';
 
 createModals(projectsData);
 createProjectCards(projectsData);
